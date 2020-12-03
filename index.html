@@ -1,0 +1,73 @@
+<!-- Exercice de Shifumi en JS
+
+Principe : 
+- Vous avez 3 choix (pierre, fueille, ciseaux), représenté par 3 boutons
+- L'ordinateur choisi l'un des trois au hazard
+- La victoire/défaite de la manche apparait une fois que le joueur à fait son choix
+- Une partie sera constitué de 5 tours
+- Le numéro du tour actuel ainsi que le score (1 point par réussite) seront à afficher
+
+Concepts pouvant vous être utils :
+- display: none
+- modification du DOM
+- eventListener
+- Surement un peu de boucles/conditions
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Shifumi</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1 class='flex'>Shifumi</h1>
+        <div class='stats flex'>
+        <p>Player Score <span class='point'>0</span></p>
+        <p>Round <span class='round'>0</span></p>
+        <p>Computer Score <span class='loosePoint'>0</span></p>
+    </div>
+
+    <div class='boardGame'>
+        <div class='options'>
+            <div class='player flex'>
+                <div class="paper">
+                    <img class= "paperButton" src="image/paper.png" alt="paper"  id="paper" value="Papier">
+
+                </div>
+                <div class="rock">
+                    <img class='rockButton' src="image/rock.png" alt="scissor" id="rock" value="Caillou">
+                    
+                </div>
+                <div class="scissors">
+                    <img class='scissorsButton' src="image/scissors.png" alt="scissor" id="scissors" value="ciseaux" >
+                    
+                </div>
+            </div>
+            <p class='nul flex'> </p>
+            <div class="computer flex">
+                <div class="paperComputer">
+                    <img class= "paperButton" src="image/paper.png" alt="paper"  id="paper" value="Papier">
+                    
+                </div>
+                <div class="rockComputer">
+                    <img class='rockButton' src="image/rock.png" alt="scissor" id="rock" value="Caillou">
+                
+                </div>
+                <div class="scissorsComputer">
+                    <img class='scissorsButton' src="image/scissors.png" alt="scissor" id="scissors" value="ciseaux">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class='endResult '>
+        <p class='result flex'></p>
+        <a class='flex newGame scale-up-center' href='index.html' >Rejouer</a>
+    </div>
+</body>
+</html>
