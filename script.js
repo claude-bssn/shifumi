@@ -44,6 +44,7 @@ function countPoint(win)
             pointTotal++;
             return document.querySelector('.point').innerHTML = pointTotal;
         }else if (win == 'Match Nul'){
+            document.querySelector('.nul').style.display = 'flex';
             return document.querySelector('.nul').innerHTML = " Match Nul !";
         }
         else if ( win == false){

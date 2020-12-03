@@ -6,45 +6,49 @@
 {
     display: flex;
     justify-content: space-evenly;
-    margin: 15px;
+    margin: 15px 0px;
     align-items: center;
+    width: 100vw;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+}
+.stats
+{
+    font-size: 3vw;
 }
 .player img
-{
-    height: 30vh;
+{  
+    width: 13vw;
     cursor: pointer;
 }
 .computer img
 {
-    height: 30vh;
+    width: 15vw;
 }
  .paperComputer , .rockComputer , .scissorsComputer
 {
     display: none;
 }
-.options
+.options .player .computer
 {
-    width: 100vw;
+    width: 70vw;
 }
 .result
-{
+{   display: flex;
     font-family: 'Press Start 2P', cursive;
-    font-size: 100px;
+    font-size: 10vw;
     height: 60vh;
-    
 }
 h1
 {
     font-family: 'Luckiest Guy', cursive; 
-    
-    
 }
 .nul
-{
-    font-size: 10em;
+{   display: none;
+    font-size: 8vw;
 }
 .endResult
-{
+{   display: none;
     justify-content: center;
     font-size: 20px;
     flex-direction: column;
@@ -81,4 +85,3 @@ h1
     }
   }
 
-  
